@@ -27,6 +27,35 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+    <style>
+      .nav > li > a.logo {
+        padding: 0;
+        margin-left: 15px;
+      }
+      .left_col {
+        /*background-color: #676a6c;*/
+      }
+      .nav-md .container.body .col-md-3.left_col {
+        width: 200px;
+      }
+      .nav-md .container.body .right_col {
+        margin-left: 200px;
+      }
+      .top_nav .nav > li > a.logo:hover {
+        background: inherit;
+      }
+      .main_container .top_nav {
+        margin-left: 200px;
+      }
+      @media (min-width: 768px) {
+        footer {
+          margin-left: 200px;
+        }
+      }
+      .nav_menu {
+        background: inherit;
+      }
+    </style>
   </head>
 
   <body class="nav-md">
@@ -111,8 +140,8 @@
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
-                  <a href="javascript:;" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/pucp.png" alt="" width="250px">
+                  <a href="javascript:;"  class="logo">
+                    <img src="images/pucp.png" alt="" height="75px">
                     
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -129,9 +158,9 @@
                 </li>
 
                 <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-sign-out pull-right"></i>
-                    <span class="badge bg-green">6</span>
+                  <br>
+                  <a href="javascript:;" class="">
+                    <i class="fa fa-sign-out"></i>
                   </a>
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
